@@ -1,0 +1,18 @@
+{
+  "name": "botdiscord2",
+  "version": "0.0.0",
+  "description": "",
+  "main": "BotCore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon core"
+  },
+  "author": "Andrey Henrique Lopes Zeferino",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.6.1",
+    "discord.js": "^12.2.0",
+    "jimp": "^0.10.3",
+    "nodemon": "^2.0.3"
+  }
+}

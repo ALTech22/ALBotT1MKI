@@ -1,0 +1,7 @@
+{
+    "name": "ALTbotMK1",
+    "version": "0.0.0",
+    "description": "Bot feito por Andrey H. L. Zeferino, com a intenção de ser usado no ALServer",
+    "discord.js": "12.2.0",
+    "nodemon": "2.0.3"
+}
