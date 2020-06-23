@@ -4,6 +4,7 @@ const dir = "./code/";
 module.exports = (prefix) => {
     var commands = {};
     const scripts = fs.readdirSync(dir);
+    
     scripts.forEach(script => {
         commands[prefix + script.split(".")[0]] = require(dir+script);
     });

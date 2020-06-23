@@ -7,8 +7,7 @@ const config = require("./info/config.json");
 
 const jimp = require("jimp")
 
-const prefix = config.prefix;
-const commands = require("./CommandsReader.js")(prefix);
+const commands = require("./CommandsReader.js")(config.prefix);
 const commandsUnknow = require("./unknowCommand.js");
 
 
@@ -19,7 +18,7 @@ client.login(config.token);
 client.on("ready", () =>{
     console.log(`Logado com o bot  ${client.user.tag} em ${client.guilds.cache.size} servidores, ajudando um total de ${client.users.cache.size} pessoas`)
     client.user.setActivity(`Estou em ${client.guilds.cache.size} servidores, yeee`);
-    if(config.debug){ console.log(prefix);
+    if(config.debug){ console.log(config.prefix);
     console.log(commands); 
     }
 })
@@ -43,7 +42,7 @@ client.on("message", (msg) => {
     const args = msg.content.split(" ");
     
     if(commands[args[0]]){ commands[args[0]](client,msg);} 
-    else if(args[0].split("")[0] == prefix){ commandsUnknow(client, msg);}
+    else if(args[0].split("")[0] == config.prefix){ commandsUnknow(client, msg);}
     }
 
 
