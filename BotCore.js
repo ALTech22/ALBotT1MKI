@@ -44,9 +44,6 @@ client.on("message", (msg) => {
     if(commands[args[0]]){ commands[args[0]](client,msg);} 
     else if(args[0].split("")[0] == config.prefix){ commandsUnknow(client, msg);}
     }
-
-
-
 })
 // welcome message
 client.on("guildMemberAdd", async member =>{
