@@ -5,13 +5,15 @@
   "main": "BotCore.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon core"
+    "start": "node ."
   },
   "author": "Andrey Henrique Lopes Zeferino",
   "license": "ISC",
   "dependencies": {
     "canvas": "^2.6.1",
+    "dependencies": "0.0.1",
     "discord.js": "^12.2.0",
+    "express": "^4.17.1",
     "jimp": "^0.10.3",
     "nodemon": "^2.0.3"
   }

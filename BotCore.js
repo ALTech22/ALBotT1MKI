@@ -1,3 +1,13 @@
+const express = require("express")
+const app = express();
+app.get("/", (request, response) =>{
+  const ping = new Date();
+  ping.setHours(ping.getHours() - 3);
+  console.log(`ping recebido às ${ping.getUTCHours()}:${ping.getUTCMinutes()}:${ping.getUTCSeconds}`);
+  response.sendStatus(200);
+})
+app.listen(process.env.PORT)
+
 const Discord = require("discord.js");
 
 const canvas = require("canvas")
@@ -11,7 +21,7 @@ const commands = require("./CommandsReader.js")(config.prefix);
 const commandsUnknow = require("./unknowCommand.js");
 
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 
 //on bot starts

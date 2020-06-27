@@ -1,2 +1,4 @@
 auto_push.bat
 node_modules
+.env
+.replit
