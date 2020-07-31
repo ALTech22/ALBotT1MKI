@@ -55,6 +55,7 @@ client.on("message", (msg) => {
     else if(args[0].split("")[0] == config.prefix){ commandsUnknow(client, msg);}
     }
 })
+/*
 // welcome message
 client.on("guildMemberAdd", async member =>{
 
@@ -129,7 +130,7 @@ client.on("guildMemberRemove", async member => {
     exitch.send(`goodbye ${member}`, attachment) //send the message
 })
 
-
+*/
 //welcome message with jimp(error)
 /*client.on("guildMemberAdd", async member => {
     const canal = await client.channels.cache.get(config.enterchannel);

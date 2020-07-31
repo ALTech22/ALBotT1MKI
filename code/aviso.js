@@ -9,7 +9,7 @@ module.exports = async (client, msg) => {
         let message = msg.content.split(" ")
          message.splice(0,1)
          message.join(" ")
-         await notice.send(`@ALGUMACOISA ${message}`)
+         await notice.send(`@everyone ${message}`)
     }else{
         msg.reply('você não possui direitos para usar este comando. Caso sejas um ADM fale com o Andrey')
     }

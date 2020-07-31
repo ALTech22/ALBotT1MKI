@@ -14,6 +14,7 @@ const desc = {
     "%help": "Mostra ajuda, igual ta acontecendo aqui",
     "%mcreator": "Sobre o mcreator",
     "%ping": "PONG!!!!",
+    "%invite": "Aqui receberás o convite para este server :D"
 };
 
 module.exports = async (client, msg) => {
