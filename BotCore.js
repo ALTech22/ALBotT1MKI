@@ -1,3 +1,4 @@
+/*
 const express = require("express")
 const app = express();
 app.get("/", (request, response) =>{
@@ -7,7 +8,7 @@ app.get("/", (request, response) =>{
   response.sendStatus(200);
 })
 app.listen(process.env.PORT)
-
+*/
 const Discord = require("discord.js");
 
 const canvas = require("canvas")
@@ -21,7 +22,8 @@ const commands = require("./CommandsReader.js")(config.prefix);
 const commandsUnknow = require("./unknowCommand.js");
 
 
-client.login(process.env.TOKEN);
+client.login(config.token);
+
 
 
 //on bot starts
@@ -42,7 +44,10 @@ client.on("guildDelete", () => {
     console.log(`Bot saiu no server ${guild.name}`);
     client.user.setActivity(`Estou em ${client.guilds.cache.size} servidores, yeee`);
 })
-
+client.on("guildMemberAdd", async member =>{
+    member.send(` Opa você é acaba de entrar no ALServer :D, seja muito bem vindo e leia as regras em <#699771931062304778> para evitar ser banido`)
+    member.send(`Por favor, também selecione o canal do Andrey que desejas: jogos(:video_game:) tutoriais/criação( :computer: ) ou os dois(:100:)`)
+})
 //chat interations
 client.on("message", (msg) => {  
 
