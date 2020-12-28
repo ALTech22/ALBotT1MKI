@@ -13,7 +13,10 @@ const desc = {
     "%help": "Mostra ajuda, igual ta acontecendo aqui",
     "%mcreator": "Sobre o mcreator",
     "%ping": "PONG!!!!",
-    "%invite": "Aqui receberás o convite para este server :D"
+    "%invite": "Aqui receberás o convite para este server :D",
+    "%Mineserver": "fala sobre o servidor para minecraft 1.16.3, incluindo seu IP",
+    "%vipApoiador": "Sobre o vip apoiador e suas vantagens",
+    "%vipSupreme": "Sobre o vip Supreme e suas vantagens"
 };
 
 module.exports = async (client, msg) => {
