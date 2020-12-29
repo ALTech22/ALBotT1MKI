@@ -13,6 +13,9 @@ module.exports = async (client,msg) => {
         {name: "7Dias R$7,00", value: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WSA42XHDDSEWS", inline:true},
         {name: "1Mês(30Dias) R$30,00", value: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UHYZQWBWFCM3S", inline:true}
     )
+    .setThumbnail('https://i.imgur.com/g9dW9sI.png')
+    .setImage('https://i.imgur.com/WwTxi5O.png')
     .setColor('#0000A9')
+    .setTimestamp()
     msg.reply(apoiador)
 }

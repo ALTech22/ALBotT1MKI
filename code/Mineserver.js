@@ -13,6 +13,9 @@ module.exports = async (client,msg) => {
         {name: 'Vip Supreme', value: 'Um vip para quem deseja apoiar, manter o servidor no ar com alguns beneficios e receber uma facilitada, %vipSupreme para mais informações', inline: true}
     )
     .setTimestamp()
+    .setThumbnail('https://i.imgur.com/WwTxi5O.png')
+    .setImage('https://i.imgur.com/WwTxi5O.png')
+    
 
     msg.reply(server)
 }

@@ -4,7 +4,7 @@ module.exports = async (client,msg) => {
     .setAuthor('Andrey e Laura', 'https://i.imgur.com/TPDapWa.png')
     .setTitle('Vip Supreme')
     .setDescription('Um vip que tras beneficios e facilita a vida da pessoa, também é util para quem quer dar um pouco mais de vida para o servidor com mais lojas nele')
-    .setFooter('todos os direitos reservedos', 'https://i.imgur.com/TPDapWa.png')
+    .setFooter('todos os direitos reservados', 'https://i.imgur.com/TPDapWa.png')
     .addFields(
         {name: "Preço", value: "R$1,50 o dia", inline: true},
         {name: "Vantagens", value: "Vou ajudar a laura na sopa :-3", inline: true},
@@ -15,5 +15,8 @@ module.exports = async (client,msg) => {
     )
     .setColor('#EE0000')
     .setTimestamp()
+    .setImage('https://i.imgur.com/WwTxi5O.png')
+    .setThumbnail('https://imgur.com/1zxE1xd.png')
+    
     msg.reply(supreme)
 }
