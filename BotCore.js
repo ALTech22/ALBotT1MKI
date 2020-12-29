@@ -1,4 +1,4 @@
-/*
+
 const express = require("express")
 const app = express();
 app.get("/", (request, response) =>{
@@ -8,7 +8,7 @@ app.get("/", (request, response) =>{
   response.sendStatus(200);
 })
 app.listen(process.env.PORT)
-*/
+
 const Discord = require("discord.js");
 
 const canvas = require("canvas")
@@ -22,7 +22,7 @@ const commands = require("./CommandsReader.js")(config.prefix);
 const commandsUnknow = require("./unknowCommand.js");
 
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 
 
