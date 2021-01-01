@@ -8,7 +8,7 @@ module.exports = async (client,msg) => {
     .setAuthor('Andrey e Laura', 'https://i.imgur.com/TPDapWa.png')
     .setFooter('Todos os direitos reservados', 'https://i.imgur.com/TPDapWa.png')
     .addFields(
-        {name: 'IP:', value: 'Em breve'},
+        {name: 'IP:', value: 'us-2.purplehost.com.br:10125'},
         {name: 'Vip Apoiador', value: 'Um vip para quem deseja apoiar e manter o servidor no ar com alguns beneficios, %vipApoiador para mais informações', inline: true},
         {name: 'Vip Supreme', value: 'Um vip para quem deseja apoiar, manter o servidor no ar com alguns beneficios e receber uma facilitada, %vipSupreme para mais informações', inline: true}
     )
